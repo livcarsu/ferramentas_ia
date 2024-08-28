@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Página com Cards</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #2d3e9c;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        footer {
+            background-color: #2d3e9c;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: auto;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-grow: 1;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            width: 800px;
+        }
+        .card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            text-decoration: none;
+            color: inherit;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-content h2 {
+            margin: 0 0 10px;
+            font-size: 1.5em;
+        }
+        .card-content p {
+            margin: 0;
+            font-size: 1em;
+            color: #333;
+        }
+        .info {
+            margin-top: 20px;
+            font-size: 1em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ferramentas - Inteligência Artificial</h1>
+    </header>
+    <div class="container">
+        <div class="cards">
+            <a href="https://app.leonardo.ai/auth/login?callbackUrl=%2F" class="card" accesskey="1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhQcncLs0eCUmfQljMhYuqd3I5y6yVIxEPsw&s" alt="Logo Leornard IA">
+                <div class="card-content">
+                    <h2>Leonardo IA</h2>
+                    <p>Criação de arte, design gráfico e geração de imagens personalizadas para diversas aplicações visuais.</p>
+                </div>
+            </a>
+            <a href="https://www.gamma.app" class="card" accesskey="2">
+                <img src="https://store-images.s-microsoft.com/image/apps.63360.13800228740496758.3ed8203a-9357-4240-af11-1c4d197a5191.a75be1f2-5bb7-4521-b003-bc0263ab8545?h=210" alt="Logo Gamma IA">
+                <div class="card-content">
+                    <h2>Gamma IA</h2>
+                    <p>Ferramenta de design e criação de conteúdo visual com foco em personalização e eficiência.</p>
+                </div>
+            </a>
+            <a href="https://gemini.google.com/" class="card" accesskey="3">
+                <img src="https://s2-epocanegocios.glbimg.com/QrrEPZZ1GY1qZhDqy8kLo2t4vbg=/0x0:2560x1440/600x0/smart/filters:gifv():strip_icc()/i.s3.glbimg.com/v1/AUTH_e536e40f1baf4c1a8bf1ed12d20577fd/internal_photos/bs/2023/L/A/SOrIBiQSOiJcCGFMZffg/google-anuncia-seu-novo-modelo-de-ia-chamado-de-gemini-scaled.jpg" alt="Logo Gemini">
+                <div class="card-content">
+                    <h2>Gemini</h2>
+                    <p>Plataforma de IA para automação de processos, análise de dados e suporte a decisões.</p>
+                </div>
+            </a>
+            <a href="https://www.runwayml.com" class="card" accesskey="4">
+                <img src="https://cientificamente.com.br/wp-content/uploads/2023/03/Runway-estreia-modelo-de-IA-que-pode-gerar-videos-a.png" alt="Logo RUNWAY">
+                <div class="card-content">
+                    <h2>RUNWAY</h2>
+                    <p>Ferramenta para edição de vídeo, efeitos visuais e criação de conteúdo multimídia com IA.</p>
+                </div>
+            </a>
+            <a href="https://www.chatgpt.com" class="card" accesskey="5">
+                <img src="https://planetacampo.canalrural.com.br/wp-content/uploads/2023/08/ChatGPT.jpg" alt="Logo CHATGPT">
+                <div class="card-content">
+                    <h2>CHATGPT</h2>
+                    <p>Assistente de conversação, geração de texto e resposta a perguntas com inteligência artificial.</p>
+                </div>
+            </a>
+            <a href="https://www.rytr.me" class="card" accesskey="6">
+                <img src="https://irp.cdn-website.com/cd119b7d/dms3rep/multi/Logos+Diret%C3%B3rio+IA-s+%284%29-81e30c43.png" alt="Logo RYTR">
+                <div class="card-content">
+                    <h2>RYTR</h2>
+                    <p>Geração de textos criativos, redação e marketing com IA para criar conteúdo escrito eficiente.</p>
+                </div>
+            </a>
+            <a href="https://www.apple.com/br/siri/" class="card" accesskey="7">
+                <img src="https://www.apple.com/v/siri/h/images/meta/siri__fsb5b98qe526_og.png?202407020502" alt="Logo Siri">
+                <div class="card-content">
+                    <h2>Siri</h2>
+                    <p>Assistente virtual da Apple para comandos de voz, pesquisas e tarefas no ecossistema Apple.</p>
+                </div>
+            </a>
+            <a href="https://www.choppity.com" class="card" accesskey="8">
+                <img src="https://media.licdn.com/dms/image/D4E0BAQHzu2wTt7Sntg/company-logo_200_200/0/1694865743372/choppity_logo?e=2147483647&v=beta&t=BAec9xexXAzX7awi0hHgradmgDtg4sVF7nBjZ94UmKc" alt="Logo CHOPPITY">
+                <div class="card-content">
+                    <h2>CHOPPITY</h2>
+                    <p>Criação automática de resumos e edições rápidas de textos e conteúdos informativos com IA.</p>
+                </div>
+            </a>
+            <a href="https://www.midjourney.com" class="card" accesskey="9">
+                <img src="https://pbs.twimg.com/media/Fu6r6_4WcAAz6le.png" alt="Logo MIDJURNEY">
+                <div class="card-content">
+                    <h2>MIDJURNEY</h2>
+                    <p>Geração de imagens e arte digital com base em descrições textuais, focado em criatividade.</p>
+                </div>
+            </a>
+        </div>
+        <div class="info">
+            <p><strong>Atalhos de Teclado:</strong></p>
+            <ul>
+                <li><strong>Leonardo IA:</strong> Alt + 1 (Windows) / Control + Option + 1 (Mac)</li>
+                <li><strong>Gamma IA:</strong> Alt + 2 (Windows) / Control + Option + 2 (Mac)</li>
+                <li><strong>Gemini:</strong> Alt + 3 (Windows) / Control + Option + 3 (Mac)</li>
+                <li><strong>RUNWAY:</strong> Alt + 4 (Windows) / Control + Option + 4 (Mac)</li>
+                <li><strong>CHATGPT:</strong> Alt + 5 (Windows) / Control + Option + 5 (Mac)</li>
+                <li><strong>RYTR:</strong> Alt + 6 (Windows) / Control + Option + 6 (Mac)</li>
+                <li><strong>Siri:</strong> Alt + 7 (Windows) / Control + Option + 7 (Mac)</li>
+                <li><strong>CHOPPITY:</strong> Alt + 8 (Windows) / Control + Option + 8 (Mac)</li>
+                <li><strong>MIDJURNEY:</strong> Alt + 9 (Windows) / Control + Option + 9 (Mac)</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Desenvolvido por Lívia Cardia Suana</p>
+    </footer>
+</body>
+</html>
